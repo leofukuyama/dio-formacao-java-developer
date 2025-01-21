@@ -3,7 +3,7 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .idea
-ContaBanco.iml
+conta-banco.iml
 
 ### Eclipse ###
 .apt_generated
