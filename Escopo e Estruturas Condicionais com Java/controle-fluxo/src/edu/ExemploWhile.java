@@ -1,3 +1,5 @@
+package edu;
+
 import java.util.concurrent.ThreadLocalRandom;
 
 public class ExemploWhile {
