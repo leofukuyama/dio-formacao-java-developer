@@ -7,6 +7,7 @@ public class Sistema {
         IPhone iPhone = new IPhone();
 
         iPhone.ligar("(43) 9 9999-9999");
+        iPhone.atender();
         iPhone.exibirPagina();
         iPhone.tocar();
     }
