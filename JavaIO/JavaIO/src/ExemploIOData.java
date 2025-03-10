@@ -30,14 +30,34 @@ public class ExemploIOData {
         double preco = scan.nextDouble();
         dos.writeDouble(preco);
 
+        ps.printf("O arquivo %s foi criado com %d bytes no diretório '%s'.\n", f.getName(), f.length(), f.getPath());
+
+        lerProduto(f.getPath());
+
         dos.close();
         scan.close();
-
-
+        ps.close();
     }
 
-    public static void lerProduto() {
+    public static void lerProduto(String caminhoArquivo) throws IOException {
+        File f = new File(caminhoArquivo);
 
+//        InputStream is = new FileInputStream(f.getPath());
+//        DataInputStream dis = new DataInputStream(is);
+        DataInputStream dis = new DataInputStream(new FileInputStream(f.getPath()));
+
+        String nome = dis.readUTF();
+        char tamanho = dis.readChar();
+        int quantidade = dis.readInt();
+        double preco = dis.readDouble();
+
+        System.out.printf("\nNome..................: %s\n", nome);
+        System.out.printf("\nQuantidade............: %s\n", quantidade);
+        System.out.printf("\nTamanho...............: %s\n", tamanho);
+        System.out.printf("\nPreço.................: %s\n", preco);
+        System.out.println("Total valor das peças: " + (quantidade * preco));
+
+        dis.close();
     }
 
     public static void main(String[] args) throws IOException {
