@@ -2,7 +2,7 @@ import java.io.*;
 
 public class ExemploIOBytes {
     public static void copiarArquivo() throws IOException {
-        File f = new File("C:\\Users\\massa\\OneDrive\\Área de Trabalho\\Cursos\\DIO\\Formação Java Developer\\dio-formacao-java-developer\\JavaIO\\JavaIO\\recomendacoes-copy.txt");
+        File f = new File("recomendacoes-copy.txt");
         String nomeArquivo = f.getName();
 
 //        InputStream is = new FileInputStream(nomeArquivo);

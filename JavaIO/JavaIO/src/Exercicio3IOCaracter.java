@@ -2,7 +2,7 @@ import java.io.*;
 
 public class Exercicio3IOCaracter {
     public static void copiarArquivo() throws IOException {
-        File f = new File("C:\\Users\\massa\\OneDrive\\Área de Trabalho\\Cursos\\DIO\\Formação Java Developer\\dio-formacao-java-developer\\JavaIO\\JavaIO\\recomendacoes.txt");
+        File f = new File("recomendacoes.txt");
         String nomeArquivo = f.getName();
 
 //        Reader r = new FileReader(nomeArquivo);

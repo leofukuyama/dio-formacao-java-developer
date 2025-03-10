@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class ExemploIOData {
     public static void incluirProduto() throws IOException {
-        File f = new File("C:\\Users\\massa\\OneDrive\\Área de Trabalho\\Cursos\\DIO\\Formação Java Developer\\dio-formacao-java-developer\\JavaIO\\JavaIO\\peca-de-roupa.bin");
+        File f = new File("peca-de-roupa.bin");
 
         PrintStream ps = new PrintStream(System.out);
         ps.flush();
